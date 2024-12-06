@@ -66,23 +66,25 @@ obstacles_for_loop = set()
 
 t0 = time()
 for index,(x,y) in enumerate(path[1:]):
-    data[x][y] = 'O'
+
     i0,j0,dir = init
-    my_path = []
+    new_path = [[[False,False,False,False] for _ in data[0]] for _ in data]
 
-    while (i0,j0,dir) not in my_path[:-1]:
-
+    while new_path[i0][j0][dir] == False:
+        new_path[i0][j0][dir] = True
+        i0,j0,dir = move2(i0,j0,dir,x,y)
         if i0 < 0 or i0 >= len(data) or j0 < 0 or j0 >= len(data[0]):
             break
-        i0,j0,dir = move2(i0,j0,dir,x,y)
-        my_path.append((i0,j0,dir))
-
-        # print(i0,j0,dir)
     else:
-        print(f"Done : ({x} {y}), {index:7} {len(path)} | {100.0*index/len(path):.2f}% in {time()-t0:.2f}s -> approx {(time()-t0)*(len(path)-index)/index:.2f}s")
-        # show(data,[(x,y) for x,y,_ in my_path])
+        # Loop found
+        print(
+            f"Done : ({x} {y}), {index:7} {len(path)} | ",
+            f"{100.0*index/len(path):.2f}%",
+            f" in {time()-t0:.2f}s -> approx ",
+            f"{(time()-t0)*(len(path))/index if index > 0 else 0:.2f}s"
+        )
         obstacles_for_loop.add((x,y))
-    data[x][y] = '.'
+
     
 
 print(len(obstacles_for_loop))
