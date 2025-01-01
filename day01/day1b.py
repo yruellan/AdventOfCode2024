@@ -2,7 +2,7 @@
 l1 = []
 l2 = []
 
-f = open("data1.txt", "r")
+f = open("data.txt", "r")
 for line in f.readlines():
     x,y = map(int, line.split())
     l1.append(x)

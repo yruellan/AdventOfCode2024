@@ -1,5 +1,5 @@
 
-f = open("data7.txt", "r")
+f = open("data.txt", "r")
 data = [
     (
         int(x.split(":")[0]), 

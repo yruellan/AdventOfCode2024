@@ -1,7 +1,7 @@
 
 l = []
 
-f = open("data2.txt", "r")
+f = open("data.txt", "r")
 for line in f.readlines():
     x = list(map(int, line.split()))
     l.append(x)

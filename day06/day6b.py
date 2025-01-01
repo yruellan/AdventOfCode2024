@@ -64,7 +64,7 @@ def get_path(i0,j0,data) -> List[Tuple[int,int]]:
 
 def main() -> None:
 
-    f = open("data6.txt", "r")
+    f = open("data.txt", "r")
     data = [list(x[:-1]) for x in f.readlines()]
     f.close()
 

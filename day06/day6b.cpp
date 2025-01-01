@@ -9,7 +9,7 @@
 using namespace std;
 
 vector<vector<char>> read_input(){
-    ifstream file("data6.txt");
+    ifstream file("data.txt");
     if (!file.is_open()) {
         cerr << "Error opening file" << endl;
         return {};

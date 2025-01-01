@@ -1,6 +1,6 @@
 import re
 
-f = open("data3.txt", "r")
+f = open("data.txt", "r")
 data = f.read()
 f.close()
 

@@ -1,6 +1,6 @@
 
 
-f = open("data4.txt", "r")
+f = open("data.txt", "r")
 data = f.readlines()
 f.close()
 

@@ -1,4 +1,4 @@
-f = open("data8.txt", "r")
+f = open("data.txt", "r")
 data = [
     list(x.strip())
     for x in f.readlines()

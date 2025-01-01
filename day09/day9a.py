@@ -1,6 +1,6 @@
 from typing import List
 
-f = open("data9.txt", "r")
+f = open("data.txt", "r")
 data = list(map(int, list(f.read())[:-1]))
 f.close()
 

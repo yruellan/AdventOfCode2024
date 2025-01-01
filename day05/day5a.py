@@ -1,5 +1,5 @@
 
-f = open("data5.txt", "r")
+f = open("data.txt", "r")
 data = f.read().split("\n\n")
 f.close()
 

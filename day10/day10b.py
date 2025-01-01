@@ -1,7 +1,7 @@
 from time import time
 from heapq import heappop,heappush
 
-f = open("data10.txt", "r")
+f = open("data.txt", "r")
 data = [list(map(int,x[:-1])) for x in f.readlines()]
 f.close()
 

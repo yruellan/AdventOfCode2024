@@ -1,5 +1,5 @@
 
-f = open("data12.txt", "r")
+f = open("data.txt", "r")
 # data = list(map(list,f.read().split("\n")))
 data = [list(x[:-1]) for x in f.readlines()]
 f.close()

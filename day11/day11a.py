@@ -1,6 +1,6 @@
 from time import time
 
-f = open("data11.txt", "r")
+f = open("data.txt", "r")
 data = list(map(int,f.read().split(" ")))
 f.close()
 
