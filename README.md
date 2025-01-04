@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a repository for my solutions to the Advent of Code 2024 puzzles. I will be using Python to solve the puzzles. 
+This is a repository for my solutions to the Advent of Code 2024 puzzles. I will be using Python to solve the puzzles. I sometimes use c++ to improve the performance of the code.
 
 The puzzles can be found at [**Advent of Code**](https://adventofcode.com/).
 
